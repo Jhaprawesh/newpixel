@@ -25,14 +25,15 @@ function RightSection() {
         <CommenHead heading="Mobiles" btn="View All" routeType="Devices" />
 
         <div className="grid grid-flow-col auto-cols-max md:grid-flow-row md:grid-cols-3 gap-6 overflow-auto">
-          {mobile.map((data, index) => (
+          {mobile.map((data) => (
             <Link
+              key={data.id}
               href={{
                 pathname: `/Devices/${data.id}`,
               }}
             >
               <div>
-                <div key={index} className="bg-[#F9F9F9] px-6 text-center ">
+                <div key={data.id} className="bg-[#F9F9F9] px-6 text-center ">
                   <Image
                     src={data.Thumb}
                     alt={data.Name}
