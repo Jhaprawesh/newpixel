@@ -33,7 +33,7 @@ function RightSection() {
               }}
             >
               <div>
-                <div key={data.id} className="bg-[#F9F9F9] px-6 text-center ">
+                <div className="bg-[#F9F9F9] px-6 text-center ">
                   <Image
                     src={data.Thumb}
                     alt={data.Name}
