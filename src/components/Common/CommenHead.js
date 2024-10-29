@@ -10,7 +10,7 @@ function CommenHead(props) {
           {props.heading}
         </h1>
         <button
-          className="text-xs text-[#2196F3] flex items-center justify-center gap-2"
+          className="text-xs text-[#2196F3] flex items-center justify-center gap-2 uppercase"
           type="button"
           onClick={() => router.push(props.routeType)}
         >
