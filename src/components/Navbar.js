@@ -40,7 +40,6 @@ export default function Navbar() {
 
   const innerSectionRef = useRef(null);
   const buttonRef = useRef(null);
-  console.log(buttonRef);
 
   // Example function to log or manipulate the inner section
 
@@ -115,7 +114,6 @@ export default function Navbar() {
           <div className="w-full max-w-sm min-w-[200px] px-10">
             <Button
               ref={buttonRef}
-              opened={opened}
               onClick={toggle}
               aria-label="Toggle navigation"
               className="w-full bg-[#64B5F6] placeholder:text-[#FFFFFF] text-sm  px-3 py-2  rounded-[60px] focus:outline-none flex"
